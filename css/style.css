@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(15, 15, 15);
+}
+
+.wrapper {
+    flex: 1;
+}
+
+/* Estilos para o header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: #000;
+    color: #fff;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.mini-logo {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-center {
+    flex: 1;
+    text-align: center;
+}
+
+.header-center input[type="text"] {
+    width: 40%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.header-right button {
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.header-right button:hover {
+    background-color: #9b4d9e;
+}
+
+/* Estilos para o footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-icons {
+    margin-bottom: 10px;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Estilos para a página atletas */
+.atletas-container {
+    padding: 20px 10%;
+}
+
+.atleta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    gap: 20px; /* Espaçamento entre imagem e descrição */
+}
+
+.atleta-imagem,
+.atleta-descricao {
+    flex: 1;
+}
+
+.atleta-imagem img {
+    width: 100%; /* Garante que a imagem ocupe toda a largura disponível */
+    max-height: 440px; /* Mantém as imagens na mesma altura */
+    object-fit: cover; /* Mantém a proporção da imagem sem distorção */
+    border-radius: 8px;
+}
+
+.atleta-descricao {
+    padding: 0 20px; /* Espaçamento interno para a descrição */
+}
+
+.atleta-descricao h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #ff9900; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    border-bottom: 2px solid #ff9900; /* Adiciona um sublinhado laranja ao link */
+}
+
+.atleta-descricao h2 a {
+    color: inherit; /* Herda a cor do elemento pai */
+    text-decoration: none; /* Remove o sublinhado padrão */
+}
+
+.atleta-descricao h2 a:hover {
+    color: #9b4d9e; /* Cor do texto quando o link está sendo hoverado */
+}
+
+.atleta-descricao p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: white;
+}
+
+/* Alternando posições da imagem e descrição */
+.atleta:nth-child(odd) .atleta-imagem {
+    order: 2;
+}
+
+.atleta:nth-child(odd) .atleta-descricao {
+    order: 1;
+}
+
+.atleta:nth-child(even) .atleta-imagem {
+    order: 1;
+}
+
+.atleta:nth-child(even) .atleta-descricao {
+    order: 2;
+}
+
+/* Estilos para a página inicial */
+.home-content {
+    padding: 20px 10%;
+    text-align: center;
+}
+
+.logo-section {
+    width: 100%;
+}
+
+.logo {
+    width: 100%;
+    max-height: auto;
+    object-fit: cover;
+}
+
+.title-section {
+    margin-bottom: 20px;
+}
+
+.title-section h1 {
+    font-size: 3em;
+    color: #fff;
+}
+
+.description-section {
+    margin-bottom: 40px;
+}
+
+.description-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.description-section a {
+    color: #ff9900;
+}
+
+.description-section a:hover {
+    color: #9b4d9e;
+}
+
+.dates-section {
+    margin-top: 40px;
+}
+
+.dates-section h2 {
+    font-size: 2em;
+    color: #fff;
+}
