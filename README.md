@@ -1,4 +1,4 @@
-# 🛹 SkateHub (Projeto em Desenvolvimento)
+# 🛹 SkateTrack (Projeto em Desenvolvimento)
 
 Este repositório contém um projeto simples de site sobre **skate**, desenvolvido como forma de **prática e aprendizado de HTML e CSS**. O objetivo era explorar a estruturação de páginas web e brincar com estilos visuais enquanto aprendia o básico do desenvolvimento front-end.
 
